@@ -12,7 +12,7 @@ export class MemberComponent  {
 
   constructor(private router: Router){}
 
-
+   members: Member[];
 
   goToDetailPage(clickedMember: Member) {
      this.router.navigate(['member', clickedMember.name]);
