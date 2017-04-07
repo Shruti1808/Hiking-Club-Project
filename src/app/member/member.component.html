@@ -5,9 +5,6 @@
   <div *ngFor="let member of members |async" (click)="goToDetailPage(member)" class="panel panel default">
     <div class="panel-body">
       <h2>{{member.name}}</h2>
-      <!-- <p>
-        {{member.image}}
-      </p> -->
       <div class="panel-body">
         <h5>Joined {{member.dateJoined}}</h5>
   </div>

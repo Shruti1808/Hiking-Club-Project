@@ -1,0 +1,35 @@
+<p>
+  edit-member works!
+</p>
+<div class="panel panel-default panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Member</h3>
+  </div>
+<div class="panel-body">
+
+<div class="form-group">
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+</div>
+<br>
+
+<div class="form-group">
+<label>New Member Image:</label>
+<input [(ngModel)]="selectedMember.image">
+</div>
+<br>
+
+<div class="form-group">
+<label>New Member Location:</label>
+<input [(ngModel)]="selectedMember.location">
+</div>
+<br>
+
+<div class="form-group">
+<label>New Member Date of Joining:</label>
+<input [(ngModel)]="selectedMember.dateJoined">
+</div>
+<button class= "btn btn-success" (click)="beginUpdatingMember(selectedMember)">Update</button>
+<hr>
+<button class= "btn btn-danger"(click)="beginDeletingMember(selectedMember)">Delete</button>
+</div>

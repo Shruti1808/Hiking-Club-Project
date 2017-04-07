@@ -1,12 +1,14 @@
 <p>
   admin works!
 </p>
+
+
 <div class="panel panel-default panel-success">
   <div class="panel-heading">
     <h3 class="panel-title">Add New Member to the Group</h3>
   </div>
   <div class="panel-body">
-    <div>
+    <div class= "form">
       <div class="form-group">
         <label>Name:</label>
         <br>
@@ -39,4 +41,9 @@
       newDate.value=''">Add</button>
     </div>
   </div>
+</div>
+
+<div>
+  <app-member></app-member>
+  <app-edit-member [selectedMember]="member"></app-edit-member>
 </div>
