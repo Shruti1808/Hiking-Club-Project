@@ -12,7 +12,7 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class AdminComponent implements OnInit {
-
+  selectedMember;
   constructor(private memberService: MemberService) { }
 
   ngOnInit() {
@@ -23,5 +23,7 @@ export class AdminComponent implements OnInit {
     this.memberService.addMember(newMember);
     console.log(newMember);
   }
+
+  
 
 }
