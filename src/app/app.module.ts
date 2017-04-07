@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { MemberComponent } from './member/member.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MemberComponent } from './member/member.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
