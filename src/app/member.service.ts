@@ -21,4 +21,8 @@ export class MemberService {
   getMemberById(memberId: number){
   return this.angularFire.database.object('members/' + memberId);
   }
+
+  addMember(newMember: Member) {
+    this.members.push(newMember);
+  }
 }
