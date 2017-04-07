@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { Member } from '../member.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-member',
   templateUrl: './member.component.html',
   styleUrls: ['./member.component.css']
 })
+
 export class MemberComponent  {
+
+  constructor(private router: Router){}
 
   members: Member[] = [
     new Member("Anthony J","https://secure.meetupstatic.com/photos/member/1/b/2/8/member_240006952.jpeg","Lacey,WA","March 9,2017"),
@@ -17,5 +21,9 @@ export class MemberComponent  {
     new Member("Donnie","https://secure.meetupstatic.com/photos/member/9/4/1/8/member_201517912.jpeg","Lacey,WA","July 2,2016")
 
   ]
+
+  goToDetailPage(clickedMember: Member) {
+     this.router.navigate(['member', clickedMember.name]);
+   };
 
 }
