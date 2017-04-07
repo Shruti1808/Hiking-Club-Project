@@ -24,6 +24,7 @@ export class MemberComponent  {
 
   goToDetailPage(clickedMember: Member) {
      this.router.navigate(['member', clickedMember.name]);
+    //  console.log(clickedMember.name);
    };
 
 }

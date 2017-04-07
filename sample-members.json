@@ -1,0 +1,32 @@
+{ "members": [{
+    "name": "Anthony J",
+    "image": "https://secure.meetupstatic.com/photos/member/1/b/2/8/member_240006952.jpeg",
+    "location": "Lacey,WA",
+    "dateJoined": "March 9,2017"
+    }, {
+      "name": "Breezy M",
+      "image": "https://secure.meetupstatic.com/photos/member/c/d/7/6/member_265132598.jpeg",
+      "location": "Seattle,WA",
+      "dateJoined": "November 4,2015"
+      }, {
+        "name": "Brena B",
+        "image": "https://secure.meetupstatic.com/photos/member/f/1/7/member_264783863.jpeg",
+        "location": "Portland,WA",
+        "dateJoined": "March 9,2017"
+      }, {
+        "name": "Christina S",
+        "image": "https://secure.meetupstatic.com/photos/member/5/9/6/2/member_234922882.jpeg",
+        "location": "Olympia,WA",
+        "dateJoined": "March 9,2017"
+      }, {
+        "name": "Derk",
+        "image": "https://secure.meetupstatic.com/photos/member/d/d/5/0/member_3176656.jpeg",
+        "location": "Tacoma,WA",
+        "dateJoined": "February 24,2017"
+      }, {
+        "name": "Donnie",
+        "image": "https://secure.meetupstatic.com/photos/member/9/4/1/8/member_201517912.jpeg",
+        "location": "Lacey,WA",
+        "dateJoined": "July 2,2016"
+  }]
+}
