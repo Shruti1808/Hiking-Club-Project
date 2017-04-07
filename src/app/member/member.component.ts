@@ -11,10 +11,10 @@ import { MemberService } from '../member.service';
 })
 
 export class MemberComponent implements OnInit{
+  members: Member[];
 
   constructor(private router: Router,  private memberService: MemberService){}
 
-   members: Member[];
 
    ngOnInit(){
      this.members = this.memberService.getMembers();
@@ -22,7 +22,7 @@ export class MemberComponent implements OnInit{
   }
 
   goToDetailPage(clickedMember: Member) {
-     this.router.navigate(['member', clickedMember.name]);
+     this.router.navigate(['member', clickedMember.id]);
     //  console.log(clickedMember.name);
    };
 

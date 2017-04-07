@@ -1,4 +1,4 @@
-import { Member } from '../member.model';
+import { Member } from './member.model';
 
 
  export const MEMBERS: Member[] = [
