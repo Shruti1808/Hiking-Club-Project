@@ -14,7 +14,7 @@ import { MemberService } from '../member.service';
 })
 export class MemberDetailComponent implements OnInit {
   memberId: number;
-  memberToDisplay: Member;
+  memberToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,7 +26,13 @@ export class MemberDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.memberId = parseInt(urlParameters['id']);
     });
-    this.memberToDisplay = this.memberService.getMemberById(this.memberId);
-  }
 
+    this.memberService.getMemberById(this.memberId).subscribe(dataLastEmittedFromObserver => {
+     this.memberToDisplay = dataLastEmittedFromObserver;
+
+     console.log(this.memberToDisplay);
+   })
+    // this.memberToDisplay = this.memberService.getMemberById(this.memberId);
+    // console.log(this.memberService.getMemberById(this.memberId).name)
+  }
 }

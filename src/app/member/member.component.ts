@@ -22,8 +22,8 @@ export class MemberComponent implements OnInit{
 
   }
 
-  goToDetailPage(clickedMember: Member) {
-     this.router.navigate(['member', clickedMember.id]);
+  goToDetailPage(clickedMember) {
+     this.router.navigate(['member', clickedMember.$key]);
     //  console.log(clickedMember.name);
    };
 
