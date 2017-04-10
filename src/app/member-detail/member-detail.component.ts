@@ -29,8 +29,8 @@ export class MemberDetailComponent implements OnInit {
 
     this.memberService.getMemberById(this.memberId).subscribe(dataLastEmittedFromObserver => {
      this.memberToDisplay = new Member(dataLastEmittedFromObserver.name,
-                                        dataLastEmittedFromObserver.location,
                                         dataLastEmittedFromObserver.image,
+                                        dataLastEmittedFromObserver.location,
                                         dataLastEmittedFromObserver.dateJoined);
 
      console.log(this.memberToDisplay);
