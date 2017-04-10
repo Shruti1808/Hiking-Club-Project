@@ -1,11 +1,13 @@
 
 <h2> Our Members</h2>
 
-
   <div *ngFor="let member of members |async" (click)="goToDetailPage(member)" class="panel panel default">
     <div class="panel-body">
       <h2>{{member.name}}</h2>
       <div class="panel-body">
         <h5>Joined {{member.dateJoined}}</h5>
         <img src="{{member.image}}" alt = "hiking member"/>
+        <div *ngIf="currentRoute === '/admin'">
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
