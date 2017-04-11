@@ -4,5 +4,6 @@ export class Member {
     public image: string,
     public location: string,
     public dateJoined:string,
+    // public hikeWithKids: boolean
   ) { }
   }
